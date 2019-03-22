@@ -6,7 +6,7 @@ import configureStore from './store/configure';
 import rootSaga from './store/sagas';
 import HomeScreen from './screens/HomeScreen';
 import ListScreen from './screens/ListScreen';
-// import DetailsScreen from './screens/DetailsScreen';
+import DetailsScreen from './screens/DetailsScreen';
 
 if (__DEV__) {
   import('./ReactotronConfig').then(() => console.log('Reactotron Configured'));
@@ -15,7 +15,7 @@ if (__DEV__) {
 const AppRoutes = createStackNavigator({
   Home: { screen: HomeScreen },
   List: { screen: ListScreen },
-//  Details: { screen: DetailsScreen },
+  Details: { screen: DetailsScreen },
 });
 
 const AppContainer = createAppContainer(AppRoutes);

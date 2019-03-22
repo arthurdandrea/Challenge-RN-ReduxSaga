@@ -17,7 +17,7 @@ class ListScreen extends Component {
 
   renderItem = ({ item }) => <ListItem
       onPress={() => {
-        //this.props.navigation.navigate('Detail', { bookId: item.id });
+        this.props.navigation.navigate('Details', { bookId: item.id });
       }}
       imageUri={
         item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : ''
